@@ -11,6 +11,7 @@ from keras.layers import Activation, Dropout, Flatten, Dense,GlobalAveragePoolin
 from keras.callbacks import *
 from keras.models import Model
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
+from tensorflow.keras.models import Sequential, save_model, load_model
 
 # define the training directory with the images 
 train_data_dir  = "/content/test/test"
@@ -103,3 +104,7 @@ model.compile(
 
 epochs = 10
 model.fit(train_generator, epochs=epochs, validation_data=validation_generator)
+
+# save model
+filepath = './ML_model/saved_model'
+save_model(model, filepath)
