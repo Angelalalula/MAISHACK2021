@@ -1,0 +1,52 @@
+﻿<html>
+<head>
+<title>Biodiversity Tracker</title>
+		
+		<h1>Welcome to our Biodiversity Tracker page</h1>
+		<style type="text/css">
+			h1
+			{
+				font-size: 50px;
+				text-align: center;
+				font-family: 'papyrus';
+			}
+		</style>
+</head>
+<body>
+    <style>
+        body
+        {
+        background-image:url({{url_for('static',filename='backgroundFinal.jpg')}})  
+		}
+    </style>
+	
+	<div class="container">
+		<style type="text/css">
+			div
+			{
+				height: 60px;
+			}
+		</style>
+	</div>
+
+    <div class="container">
+    <div class="row">
+        <h2>Have you ever seen a beautiful flower and wondered what kind of flower it is?</h2>
+        <h2>Have you ever stepped on a pretty leaf and questioned which tree did it possibly fall of?</h2>
+        <h2>Well, you're not the first</h2>
+        <h2>In this website, you can get the answer to all your questions by simply <a href="{{url_for('main')}}"> uploading a picture! </a><h2>
+
+        <style type="text/css">
+			h2
+			{
+				font-size: 25px;
+				text-align: center;
+				font-family: 'garamond';
+			}
+		</style>
+
+    </div>
+    </div>
+
+</body>
+</html>
